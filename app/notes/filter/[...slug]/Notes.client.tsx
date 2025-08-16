@@ -19,7 +19,6 @@ interface NotesClientProps {
 
 export default function NotesClient({ initialData, tag }: NotesClientProps) {
   const [page, setPage] = useState(1);
-  //   const [isModalOpen, setIsModalOpen] = useState(false);
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
 
@@ -68,12 +67,6 @@ export default function NotesClient({ initialData, tag }: NotesClientProps) {
           <p>Notes not found</p>
         )
       ) : null}
-
-      {/* {isModalOpen && (
-        <Modal onClose={() => setIsModalOpen(false)}>
-          <NoteForm onCloseModal={() => setIsModalOpen(false)} />
-        </Modal>
-      )} */}
     </div>
   );
 }
